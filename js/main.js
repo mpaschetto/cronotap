@@ -1,2 +1,5 @@
 import Greet from './sampleModule.js';
-console.log(Greet());
+import Task from './task.js';
+let myTask = new Task('test');
+console.log('Task name is ' + myTask.name);
+

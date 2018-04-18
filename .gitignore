@@ -1,6 +1,9 @@
 # my stuff
 leggimi.txt
 
+# build
+dist/
+
 # Logs
 logs
 *.log

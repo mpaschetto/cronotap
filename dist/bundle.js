@@ -79,7 +79,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sampleModule_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sampleModule.js */ \"./js/sampleModule.js\");\n//import \"babel-polyfill\";\n\nconsole.log(Object(_sampleModule_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sampleModule_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sampleModule.js */ \"./js/sampleModule.js\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ \"./js/task.js\");\n\n\nlet myTask = new _task_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('test');\nconsole.log('Task name is ' + myTask.name);\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 
@@ -92,6 +92,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sam
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Hello; });\nfunction Hello() {\n    return 'Hi';\n}\n\n//# sourceURL=webpack:///./js/sampleModule.js?");
+
+/***/ }),
+
+/***/ "./js/task.js":
+/*!********************!*\
+  !*** ./js/task.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Task; });\nclass Task {\n    constructor(name) {\n        this.name = name;\n        this.elapsedTime = 0;\n    }\n}\n\n//# sourceURL=webpack:///./js/task.js?");
 
 /***/ }),
 
